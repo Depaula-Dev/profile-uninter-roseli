@@ -16,7 +16,7 @@ body {
   .container-layout {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 90px auto 90px;
+    grid-template-rows: 80px auto 90px;
     grid-template-areas: "header" "main" "footer";
     height: 100vh;
   }
@@ -27,11 +27,14 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: rgb(169, 231, 169);
+  background-color: #d5e2ee9e;
   grid-area: header;
 }
 
 main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* background-color: rgba(211, 153, 221, 0.656); */
   grid-area: main;
 }
@@ -83,9 +86,9 @@ footer {
 }
 
 .menu-horizontal a:hover {
-  color: #5082b5;
-  background-color: #9dc8fc29;
-  border-radius: 10px;
+  color: #030910;
+  background-color: #98b1d0c7;
+  border-radius: 10px solid;
 }
 
 .contato{
@@ -93,6 +96,7 @@ footer {
   justify-content: center;
   align-items: center;
   border: 2px solid #325f73;
+  background-color: #98b1d051;
   border-radius: 10px;
   padding: 5px;
 }
@@ -101,15 +105,22 @@ footer {
   text-decoration: none;
   color: #003366;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-.contato a:hover {
-  color: #5082b5;
-  background-color: #9dc8fc29;
+.contato:hover {
+  color: #030910;
+  background-color: #98b1d0c7;
   border-radius: 10px;
+  transform: translateY(-1px)
 }
 
-.container-quemsoueu {
+.container-quemsoueu-tex{
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 50px;
+}
+.container-quemsoueu-img {
   width: 100%;
   height: 400px;
   margin: 20px;
@@ -147,7 +158,7 @@ footer {
 }
 
 /* Style imagem "Sobre Mim" */
-.container-quemsoueu img {
+.container-quemsoueu-img img {
   position: relative;
   width: 500px;
   z-index: 2;
