@@ -4,6 +4,8 @@ body {
   font-family: Arial, Helvetica;
   background-color: #f0f8ff;
 }
+
+/* Layout telas menores que 480px*/
 .container-layout {
   display: grid;
   grid-template-columns: 1fr;
@@ -12,6 +14,7 @@ body {
   height: 100vh;
 }
 
+/* Configurando telas maiores que 480px*/
 @media (width > 480px) {
   .container-layout {
     display: grid;
@@ -44,6 +47,8 @@ footer {
   grid-area: footer;
 }
 
+
+/* Configurando e ajustando o Logo */
 .logo {
   display: flex;
   align-items: center;
@@ -66,6 +71,8 @@ footer {
 .logo-img {
   width: 40px;
 }
+
+/* Configurando e ajustando o menu hotizontal no header */
 .menu-horizontal {
   display: flex;
   justify-content: center;
@@ -83,14 +90,16 @@ footer {
   color:#003366;
   transition: background-color 0.3s ease;
   width: 100px;
+  border-radius: 10px;
 }
 
 .menu-horizontal a:hover {
   color: #030910;
   background-color: #98b1d0c7;
-  border-radius: 10px solid;
 }
 
+
+/* Configurando e ajustando o botão "Contato" no header */
 .contato{
   display: flex;
   justify-content: center;
@@ -115,22 +124,32 @@ footer {
   transform: translateY(-1px)
 }
 
-.container-quemsoueu-tex{
-  text-align: center;
-  font-size: 0.85rem;
-  padding: 50px;
-}
-.container-quemsoueu-img {
-  width: 100%;
-  height: 400px;
-  margin: 20px;
+/* Configurando e ajustando o texto da frase inicial no main */
+.container-frase {
+  text-align: left;
+  padding: 40px;
 }
 
-/* Style circulos "Quem sou eu" */
+.container-frase h1 {
+  font-size: 2rem;
+}
+
+.container-frase p {
+  font-size: 0.9rem;
+}
+
+/* Configurando e ajustando o container "Quem sou eu" no main */
+.container-quemsoueu-img {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Configurando e ajustando circulos "Quem sou eu" */
 .circle-inner {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   color: #26e1b5;
   width: 95px;
   height: 95px;
@@ -157,9 +176,22 @@ footer {
       border-box;
 }
 
-/* Style imagem "Sobre Mim" */
+/* Configurando e ajustando imagem "Quem sou eu */
 .container-quemsoueu-img img {
   position: relative;
   width: 500px;
   z-index: 2;
+  padding: 40px;
 }
+
+/* Configurando e ajustando o texto "Quem sou eu" no main */
+.container-quemsoueu-tex{
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 40px;
+}
+
+.container-quemsoueu-tex h1 {
+  font-size: 1.7rem;
+}
+
