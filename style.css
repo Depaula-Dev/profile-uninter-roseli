@@ -37,8 +37,8 @@ header {
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
-  /* background-color: rgba(211, 153, 221, 0.656); */
+  padding: 30px;
+  gap: 20px;
   grid-area: main;
 }
 
@@ -46,7 +46,6 @@ footer {
   /* background-color: rgba(100, 108, 209, 0.649); */
   grid-area: footer;
 }
-
 
 /* Configurando e ajustando o Logo */
 .logo {
@@ -87,7 +86,7 @@ footer {
   text-decoration: none;
   text-align: center;
   padding: 10px;
-  color:#003366;
+  color: #003366;
   transition: background-color 0.3s ease;
   width: 100px;
   border-radius: 10px;
@@ -95,12 +94,11 @@ footer {
 
 .menu-horizontal a:hover {
   color: #030910;
-  background-color: #98b1d0c7;
+  border-bottom: 1px solid #030910;
 }
 
-
 /* Configurando e ajustando o botão "Contato" no header */
-.contato{
+.contato {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,71 +119,147 @@ footer {
   color: #030910;
   background-color: #98b1d0c7;
   border-radius: 10px;
-  transform: translateY(-1px)
+  transform: translateY(-1px);
 }
 
 /* Configurando e ajustando o texto da frase inicial no main */
 .container-frase {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 350px;
   text-align: left;
-  padding: 40px;
+  margin: 0;
 }
 
 .container-frase h1 {
   font-size: 2rem;
+  margin: 0;
+}
+
+.container-frase h3 {
+  margin: 10px 0;
 }
 
 .container-frase p {
   font-size: 0.9rem;
+  margin: 20px 0;
 }
 
 /* Configurando e ajustando o container "Quem sou eu" no main */
 .container-quemsoueu-img {
-  width: 100%;
-  padding: 20px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 50%;
+  height: 400px;
+  overflow: hidden;
 }
 
-/* Configurando e ajustando circulos "Quem sou eu" */
-.circle-inner {
+/* Configurando e ajustando circulos "Tecnology" */
+.container-quemsoueu-img .circle-inner-tec {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  color: #26e1b5;
+  color: rgb(38, 225, 181);
   width: 95px;
   height: 95px;
-  background-color: #cff4ec;
+  top: 175px;
+  left: 50px;
+  background-color: rgb(207, 244, 236);
   border-radius: 50%;
   z-index: 1;
   position: absolute;
-  top: 100px;
-  left: 50px;
 }
 
-.circle-out {
+.container-quemsoueu-img .circle-out-tec {
   width: 120px;
   height: 300px;
   position: absolute;
-  top: 75px;
+  top: 150px;
   left: 25px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   border: solid 14px transparent;
   border-radius: 80px;
-  background: linear-gradient(rgb(255, 255, 255, 1), rgb(255, 255, 255, 0) 70%)
+  background: linear-gradient(rgb(240, 248, 255), rgb(255, 255, 255, 0) 70%)
       padding-box,
     linear-gradient(to bottom, rgb(207, 244, 236, 1), rgb(255, 255, 255, 0) 70%)
       border-box;
 }
 
-/* Configurando e ajustando imagem "Quem sou eu */
+/* Configurando e ajustando circulos "Nature" */
+.container-quemsoueu-img .circle-inner-nature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(233, 179, 104);
+  width: 95px;
+  height: 95px;
+  top: 100px;
+  right: 50px;
+  background-color: rgb(248, 240, 213);
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+}
+
+.container-quemsoueu-img .circle-out-nature {
+  width: 120px;
+  height: 300px;
+  position: absolute;
+  bottom: 180px;
+  right: 25px;
+  background-color: rgb(255, 255, 255); 
+  border: solid 14px transparent;
+  border-radius: 80px;
+  background: linear-gradient(rgb(255, 255, 255, 0), rgb(240, 248, 255) 70%)
+      padding-box,
+    linear-gradient(to top, rgb(248, 240, 213, 1), rgb(255, 255, 255, 0) 70%)
+      border-box;
+}
+
+
+/* Configurando e ajustando circulos "Clean Code" */
+.container-quemsoueu-img .circle-inner-clean {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:rgb(149, 98, 211);
+  width: 95px;
+  height: 95px;
+  top: 280px;
+  right: 70px;
+  background-color: rgb(209, 189, 234);
+  border-radius: 50%;
+  z-index: 1;
+  position: absolute;
+}
+
+.container-quemsoueu-img .circle-out-clean {
+  width: 300px;
+  height: 120px;
+  position: absolute;
+  top: 252px;
+  left: 540px;
+  background-color: rgb(255, 255, 255);;
+  border: solid 14px transparent;
+  border-radius: 80px;
+  background: linear-gradient(to right, rgb(240, 248, 255), rgb(255, 255, 255, 0)70%)
+      padding-box,
+    linear-gradient(to right, rgb(209, 189, 234, 1), rgb(255, 255, 255, 0) 70%)
+      border-box;
+}
+
+/* Configurando e ajustando imagem "Quem sou eu" */
 .container-quemsoueu-img img {
   position: relative;
-  width: 500px;
+  height: 100%;
   z-index: 2;
-  padding: 40px;
 }
 
 /* Configurando e ajustando o texto "Quem sou eu" no main */
-.container-quemsoueu-tex{
+.container-quemsoueu-tex {
   text-align: center;
   font-size: 0.85rem;
   padding: 40px;
@@ -194,4 +268,3 @@ footer {
 .container-quemsoueu-tex h1 {
   font-size: 1.7rem;
 }
-
