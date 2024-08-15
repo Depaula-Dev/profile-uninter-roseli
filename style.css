@@ -37,7 +37,7 @@ header {
 main {
   display: flex;
   justify-content: center;
-  padding: 30px;
+  padding: 40px;
   gap: 20px;
   grid-area: main;
 }
@@ -146,7 +146,7 @@ footer {
 }
 
 /* Configurando e ajustando o container "Quem sou eu" no main */
-.container-quemsoueu-img {
+.container-apresentacao-img {
   display: flex;
   position: relative;
   justify-content: center;
@@ -156,7 +156,7 @@ footer {
 }
 
 /* Configurando e ajustando circulos "Tecnology" */
-.container-quemsoueu-img .circle-inner-tec {
+.container-apresentacao-img .circle-inner-tec {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -171,7 +171,7 @@ footer {
   position: absolute;
 }
 
-.container-quemsoueu-img .circle-out-tec {
+.container-apresentacao-img .circle-out-tec {
   width: 120px;
   height: 300px;
   position: absolute;
@@ -187,7 +187,7 @@ footer {
 }
 
 /* Configurando e ajustando circulos "Nature" */
-.container-quemsoueu-img .circle-inner-nature {
+.container-apresentacao-img .circle-inner-nature {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,7 +202,7 @@ footer {
   position: absolute;
 }
 
-.container-quemsoueu-img .circle-out-nature {
+.container-apresentacao-img .circle-out-nature {
   width: 120px;
   height: 300px;
   position: absolute;
@@ -218,7 +218,7 @@ footer {
 }
 
 /* Configurando e ajustando circulos "Clean Code" */
-.container-quemsoueu-img .circle-inner-clean {
+.container-apresentacao-img .circle-inner-clean {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,19 +226,19 @@ footer {
   width: 95px;
   height: 95px;
   top: 280px;
-  right: 70px;
+  right: 95px;
   background-color: rgb(209, 189, 234);
   border-radius: 50%;
   z-index: 1;
   position: absolute;
 }
 
-.container-quemsoueu-img .circle-out-clean {
+.container-apresentacao-img .circle-out-clean {
   width: 300px;
   height: 120px;
   position: absolute;
   top: 252px;
-  left: 540px;
+  left: 510px;
   background-color: rgb(255, 255, 255);
   border: solid 14px transparent;
   border-radius: 80px;
@@ -252,7 +252,7 @@ footer {
       border-box;
 }
 /* Configurando e ajustando circulos "" azul */
-.container-quemsoueu-img .circle-out-blue {
+.container-apresentacao-img .circle-out-blue {
   width: 120px;
   height: 300px;
   position: absolute;
@@ -267,7 +267,7 @@ footer {
       border-box;
 }
 
-.container-quemsoueu-img .circle-out-red {
+.container-apresentacao-img .circle-out-red {
   width: 120px;
   height: 300px;
   position: absolute;
@@ -283,19 +283,19 @@ footer {
 }
 
 /* Configurando e ajustando imagem "Quem sou eu" */
-.container-quemsoueu-img img {
+.container-apresentacao-img img {
   position: relative;
   height: 100%;
   z-index: 2;
 }
 
 /* Configurando e ajustando o texto "Quem sou eu" no main */
-.container-quemsoueu-tex {
+.container-apresentacao-tex {
   text-align: center;
   font-size: 0.85rem;
   padding: 40px;
 }
 
-.container-quemsoueu-tex h1 {
+.container-apresentacao-tex h1 {
   font-size: 1.7rem;
 }
