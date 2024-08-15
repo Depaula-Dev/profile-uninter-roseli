@@ -92,7 +92,6 @@ footer {
   border-radius: 10px;
 }
 
-
 .menu-horizontal a:hover {
   padding-bottom: 2px;
   color: #030910;
@@ -136,17 +135,15 @@ footer {
 }
 
 .container-frase h1 {
-  font-size: 2rem;
-  margin: 0;
+  font-size: 3rem;
 }
 
 .container-frase h3 {
-  margin: 10px 0;
+  font-style: italic;
 }
 
 .container-frase p {
-  font-size: 0.9rem;
-  margin: 20px 0;
+  font-size: 1.5rem;
 }
 
 /* Configurando e ajustando o container "Quem sou eu" no main */
@@ -212,7 +209,7 @@ footer {
   position: absolute;
   bottom: 180px;
   right: 25px;
-  background-color: rgb(255, 255, 255); 
+  background-color: rgb(255, 255, 255);
   border: solid 14px transparent;
   border-radius: 80px;
   background: linear-gradient(rgb(255, 255, 255, 0), rgb(240, 248, 255) 70%)
@@ -221,13 +218,12 @@ footer {
       border-box;
 }
 
-
 /* Configurando e ajustando circulos "Clean Code" */
 .container-quemsoueu-img .circle-inner-clean {
   display: flex;
   justify-content: center;
   align-items: center;
-  color:rgb(149, 98, 211);
+  color: rgb(149, 98, 211);
   width: 95px;
   height: 95px;
   top: 280px;
@@ -244,12 +240,46 @@ footer {
   position: absolute;
   top: 252px;
   left: 540px;
-  background-color: rgb(255, 255, 255);;
+  background-color: rgb(255, 255, 255);
   border: solid 14px transparent;
   border-radius: 80px;
-  background: linear-gradient(to right, rgb(240, 248, 255), rgb(255, 255, 255, 0)70%)
+  background: linear-gradient(
+        to right,
+        rgb(240, 248, 255),
+        rgb(255, 255, 255, 0) 70%
+      )
       padding-box,
     linear-gradient(to right, rgb(209, 189, 234, 1), rgb(255, 255, 255, 0) 70%)
+      border-box;
+}
+/* Configurando e ajustando circulos "" azul */
+.container-quemsoueu-img .circle-out-blue {
+  width: 120px;
+  height: 300px;
+  position: absolute;
+  bottom: 270px;
+  left: 70px;
+  background-color: rgb(255, 255, 255);
+  border: solid 14px transparent;
+  border-radius: 80px;
+  background: linear-gradient(rgb(255, 255, 255, 0), rgb(240, 248, 255))
+      padding-box,
+    linear-gradient(to top, rgb(218, 233, 255), rgba(252, 217, 217, 0) 70%)
+      border-box;
+}
+
+.container-quemsoueu-img .circle-out-red {
+  width: 120px;
+  height: 300px;
+  position: absolute;
+  bottom: 300px;
+  right: 180px;
+  background-color: rgb(255, 255, 255);
+  border: solid 14px transparent;
+  border-radius: 80px;
+  background: linear-gradient(rgb(255, 255, 255, 0), rgb(240, 248, 255))
+      padding-box,
+    linear-gradient(to top, rgb(254, 231, 239), rgb(255, 255, 255, 0) 70%)
       border-box;
 }
 
