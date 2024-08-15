@@ -112,13 +112,11 @@ footer {
 .contato a {
   text-decoration: none;
   color: #003366;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+   transition: background-color 0.3s ease;
 }
 
 .contato:hover {
   color: #030910;
-  background-color: #98b1d0c7;
   border-radius: 10px;
   transform: translateY(-1px);
 }
