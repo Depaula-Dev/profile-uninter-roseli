@@ -68,7 +68,7 @@ footer {
 }
 
 .logo-img {
-  width: 40px;
+  width: 45px;
 }
 
 /* Configurando e ajustando o menu hotizontal no header */
@@ -112,7 +112,7 @@ footer {
 .contato a {
   text-decoration: none;
   color: #003366;
-   transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .contato:hover {
@@ -121,8 +121,22 @@ footer {
   transform: translateY(-1px);
 }
 
-/* Configurando e ajustando o texto da frase inicial no main */
-.container-frase {
+/* Configurando e ajustando container main ........................................................................*/
+.container {
+  display: flex;
+  flex-direction: column;
+}
+/* ........................................ ........................................................................*/
+
+/* Configurando e ajustando o container apresentação */
+.container-apresentacao {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Configurando e ajustando o container da FRASE de apresentação */
+.container-apresentacao-frase {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -132,27 +146,34 @@ footer {
   margin: 0;
 }
 
-.container-frase h1 {
-  font-size: 2.5rem;
+.container-apresentacao-frase h1 {
+  font-size: 3rem;
 }
 
-.container-frase h3 {
+.container-apresentacao-frase h3 {
   font-size: 0.9rem;
   font-style: italic;
 }
 
-.container-frase p {
+.container-apresentacao-frase p {
   font-size: 1.2rem;
 }
 
-/* Configurando e ajustando o container "Quem sou eu" no main */
+/* Configurando e ajustando o container da IMAGEM de apresentação */
 .container-apresentacao-img {
   display: flex;
   position: relative;
   justify-content: center;
   width: 50%;
-  height: 400px;
+  height: 450px;
   overflow: hidden;
+}
+
+/* Configurando e ajustando IMAGEM na apresentação */
+.container-apresentacao-img img {
+  position: relative;
+  height: 100%;
+  z-index: 2;
 }
 
 /* Configurando e ajustando circulos "Tecnology" */
@@ -206,7 +227,7 @@ footer {
   width: 120px;
   height: 300px;
   position: absolute;
-  bottom: 180px;
+  bottom: 230px;
   right: 25px;
   background-color: rgb(255, 255, 255);
   border: solid 14px transparent;
@@ -256,8 +277,8 @@ footer {
   width: 120px;
   height: 300px;
   position: absolute;
-  bottom: 270px;
-  left: 70px;
+  bottom: 350px;
+  left: 60px;
   background-color: rgb(255, 255, 255);
   border: solid 14px transparent;
   border-radius: 80px;
@@ -267,6 +288,7 @@ footer {
       border-box;
 }
 
+/* Configurando e ajustando circulos "" red */
 .container-apresentacao-img .circle-out-red {
   width: 120px;
   height: 300px;
@@ -282,20 +304,38 @@ footer {
       border-box;
 }
 
-/* Configurando e ajustando imagem "Quem sou eu" */
-.container-apresentacao-img img {
+/* Configurando e ajustando container QUEM SOU EU */
+.container-quemsoueu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 115px;
+  gap: 20px;
+}
+
+/* Configurando e ajustando imagem QUEM SOU EU */
+.container-quemsoueu-img {
+  display: flex;
   position: relative;
+  justify-content: center;
+  width: 50%;
+  flex-direction: column;
+}
+
+.container-quemsoueu-img {
+  width: 500px;
   height: 100%;
-  z-index: 2;
 }
 
-/* Configurando e ajustando o texto "Quem sou eu" no main */
-.container-apresentacao-tex {
+/* Configurando e ajustando o texto QUEM SOU EU */
+.container-quemsoueu-tex {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
   text-align: center;
-  font-size: 0.85rem;
-  padding: 40px;
-}
-
-.container-apresentacao-tex h1 {
-  font-size: 1.7rem;
+  margin: 0;
 }
