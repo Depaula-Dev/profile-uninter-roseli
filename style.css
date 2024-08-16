@@ -30,7 +30,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #d5e2ee9e;
+  background-color: rgba(213, 226, 238, 0.62);
   grid-area: header;
 }
 
@@ -59,7 +59,7 @@ footer {
 .logo-dev {
   font-size: 2rem;
   font-weight: bold;
-  color: #31297abc;
+  color: rgba(49, 41, 122, 0.737);
 }
 
 .logo-veg {
@@ -80,21 +80,28 @@ footer {
   gap: 30px;
 }
 
+.menu-horizontal span{
+  color: rgb(232, 123, 72);
+  font-weight: bold;
+}
+
 .menu-horizontal a {
   display: block;
   text-align: center;
   text-decoration: none;
   text-align: center;
   padding: 10px;
-  color: #003366;
+  color: rgb(0, 51, 102);
   transition: background-color 0.3s ease;
   width: 100px;
   border-radius: 10px;
+
 }
+
 
 .menu-horizontal a:hover {
   padding-bottom: 2px;
-  color: #030910;
+  color: rgb(3, 9, 16);
   border-bottom: 1px solid #030910;
 }
 
@@ -103,21 +110,23 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #325f73;
-  background-color: #98b1d051;
-  border-radius: 10px;
-  padding: 5px;
+  background-color: rgb(128, 76, 253);
+  border-radius: 5px;
+  padding:10px 15px;
+  box-shadow: 5px 5px 15px rgb(128, 76, 253);
+  
 }
 
 .contato a {
+  color: #fff;
   text-decoration: none;
-  color: #003366;
   transition: background-color 0.3s ease;
+  font-size: 0.9rem;
 }
 
 .contato:hover {
-  color: #030910;
-  border-radius: 10px;
+  color: rgb(3, 9, 16);
+  font-weight: bold;
   transform: translateY(-1px);
 }
 
@@ -148,6 +157,10 @@ footer {
 
 .container-apresentacao-frase h1 {
   font-size: 3rem;
+}
+
+.container-apresentacao-frase h1 span {
+  color: rgb(255, 104, 32);
 }
 
 .container-apresentacao-frase h3 {
