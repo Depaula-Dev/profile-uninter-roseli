@@ -43,8 +43,12 @@ main {
 }
 
 footer {
-  /* background-color: rgba(100, 108, 209, 0.649); */
   grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(213, 226, 238, 0.62);
 }
 
 /* Configurando e ajustando o Logo */
@@ -80,11 +84,6 @@ footer {
   gap: 30px;
 }
 
-.menu-horizontal span {
-  color: rgb(232, 123, 72);
-  font-weight: bold;
-}
-
 .menu-horizontal a {
   display: block;
   text-align: center;
@@ -101,6 +100,11 @@ footer {
   padding-bottom: 2px;
   color: rgb(3, 9, 16);
   border-bottom: 1px solid #030910;
+}
+
+.menu-horizontal a.active {
+  color: rgb(232, 123, 72);
+  font-weight: bold;
 }
 
 /* Configurando e ajustando o botão "Contato" no header */
@@ -167,6 +171,10 @@ footer {
 
 .container-apresentacao-frase p {
   font-size: 1.2rem;
+}
+
+.container-apresentacao-frase i {
+  color: rgb(101, 211, 101);
 }
 
 /* Configurando e ajustando o container da IMAGEM de apresentação */
@@ -465,4 +473,18 @@ footer {
   color: #fff;
   font-weight: bold;
   transform: translateY(-1px);
+}
+
+.container-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.container-links i {
+  font-size: 30px;
+  color: rgb(242, 84, 27);
+  
 }
