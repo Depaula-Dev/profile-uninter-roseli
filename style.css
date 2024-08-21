@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  background-color: #f0f8ff;
+  background-color: rgb(240, 248, 255);
 }
 
 /* Layout telas menores que 480px*/
@@ -321,7 +321,7 @@ footer {
       border-box;
 }
 
-/* Configurando e ajustando container QUEM SOU EU */
+/* Configurando e ajustando container Quem sou Eu */
 .container-quemsoueu {
   display: flex;
   justify-content: center;
@@ -332,7 +332,7 @@ footer {
   gap: 20px;
 }
 
-/* Configurando e ajustando imagem QUEM SOU EU */
+/* Configurando e ajustando o container da imagem Quem sou Eu */
 .container-quemsoueu-img {
   display: flex;
   position: relative;
@@ -341,12 +341,13 @@ footer {
   flex-direction: column;
 }
 
+/* Configurando e ajustando a IMAGEM Quem sou Eu */
 .container-quemsoueu-img img {
   width: 500px;
   height: 100%;
 }
 
-/* Configurando e ajustando o texto QUEM SOU EU */
+/* Configurando e ajustando o texto Quem sou Eu */
 .container-quemsoueu-tex {
   display: flex;
   position: relative;
@@ -357,7 +358,7 @@ footer {
   margin: 0;
 }
 
-/* Configurando e ajustando o texto ACADEMICO */
+/* Configurando e ajustando o texto Acadêmico */
 .container-academico {
   display: flex;
   justify-content: center;
@@ -406,6 +407,7 @@ footer {
   height: 100%;
 }
 
+/* Configurando e ajustando o container formulário para contato */
 .container-contato {
   display: flex;
   justify-content: center;
@@ -415,6 +417,7 @@ footer {
   gap: 120px;
 }
 
+/* Configurando e ajustando o container imagem do formulário para contato */
 .container-contato-img {
   display: flex;
   position: relative;
@@ -424,12 +427,13 @@ footer {
   margin: 0;
 }
 
+/* Configurando e ajustando a imagem do formulário para contato */
 .container-contato-img img {
   width: 800px;
   height: 100%;
-
 }
 
+/* Configurando e ajustando o container formulário para contato */
 .container-contato-form {
   display: flex;
   position: relative;
@@ -475,7 +479,8 @@ footer {
   transform: translateY(-1px);
 }
 
-.container-links{
+/* Configurando e ajustando o footer com GitHub e LinkedIn */
+.container-links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -486,5 +491,4 @@ footer {
 .container-links i {
   font-size: 30px;
   color: rgb(242, 84, 27);
-  
 }
