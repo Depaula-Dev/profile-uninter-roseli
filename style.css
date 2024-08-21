@@ -99,7 +99,8 @@ footer {
 .menu-horizontal a:hover {
   padding-bottom: 2px;
   color: rgb(3, 9, 16);
-  border-bottom: 1px solid #030910;
+  border-bottom: 1px solid #a2a2a2;
+  border-radius: 0;
 }
 
 .menu-horizontal a.active {
@@ -127,8 +128,8 @@ footer {
 
 .contato:hover {
   color: rgb(3, 9, 16);
-  font-weight: bold;
   transform: translateY(-1px);
+  background: #804cfd99;
 }
 
 /* Configurando e ajustando container main ........................................................................*/
@@ -143,6 +144,8 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 100px;
 }
 
 /* Configurando e ajustando o container da FRASE de apresentação */
@@ -330,6 +333,8 @@ footer {
   width: 100%;
   padding-top: 100px;
   gap: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 100px;
 }
 
 /* Configurando e ajustando o container da imagem Quem sou Eu */
@@ -348,13 +353,19 @@ footer {
 }
 
 /* Configurando e ajustando o texto Quem sou Eu */
+
+.container-quemsoueu-tex h1 {
+  color: rgba(49, 41, 122);
+  text-align: center;
+}
+
 .container-quemsoueu-tex {
   display: flex;
   position: relative;
   justify-content: center;
   flex-direction: column;
   width: 50%;
-  text-align: center;
+  text-align: justify;
   margin: 0;
 }
 
@@ -367,6 +378,8 @@ footer {
   width: 100%;
   padding-top: 100px;
   gap: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 100px;
 }
 
 .container-academico-text {
@@ -392,6 +405,7 @@ footer {
 
 .container-academico-text h1 {
   text-align: center;
+  color: rgba(49, 41, 122);
 }
 
 .container-academico-img {
@@ -442,6 +456,10 @@ footer {
   width: 50%;
   padding-top: 100px;
 }
+.container-contato-form h1 {
+  color: rgba(49, 41, 122);
+  text-align: center;
+}
 
 .container-contato-form label {
   padding-bottom: 5px;
@@ -450,8 +468,7 @@ footer {
 
 .container-contato-form .campo {
   border-radius: 3px;
-  border: 1px solid rgb(128, 76, 253);
-  box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+  border: 1px solid rgb(128, 76, 253, 0.3);
   padding: 8px;
 }
 
@@ -471,11 +488,12 @@ footer {
   font-size: 1rem;
   margin-top: 15px;
   width: 155px;
+  border: 0;
 }
 
 .container-contato-form button:hover {
   color: #fff;
-  font-weight: bold;
+  background: #804cfd99;
   transform: translateY(-1px);
 }
 
