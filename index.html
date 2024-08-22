@@ -27,7 +27,7 @@
             <div class="logo">
                 <span class="logo-dev">Dev</span>
                 <span class="logo-veg">Veg</span>
-                <img class="logo-img" src="imglogo.png" alt="">
+                <img class="logo-img" src="imglogo.png" alt="img-logo">
             </div>
 
             <nav>
@@ -112,8 +112,10 @@
                 </div>
             </div>
 
+            
             <div id="academico" class="container-academico">
 
+                <!-- Academico texto a esquerda -->
                 <div class="container-academico-text">
                     <h1>Formação Acadêmica</h1>
                     <ul>
@@ -138,20 +140,23 @@
 
                 </div>
 
+                <!-- Academico imagem a direita -->
                 <div class="container-academico-img">
-                    <img src="academico.png" alt="academico">
+                    <img src="academico.png" alt="img-academico">
                 </div>
 
             </div>
 
             <div id="contato" class="container-contato">
 
+                <!-- Formulário imagem a esquerda -->
                 <div class="container-contato-img">
-                    <img src="contato.png" alt="">
+                    <img src="contato.png" alt="img-contato">
                 </div>
 
                 <form>
 
+                     <!-- Formulário a direita -->
                     <div class="container-contato-form">
 
                         <h1>Entre em Contato</h1>
@@ -181,6 +186,7 @@
 
         <footer>
 
+             <!-- links para o GitHub e LinkedIn -->
             <div class="container-links">
 
                 <a href="https://github.com/Depaula-Dev" target="_blank">
@@ -199,10 +205,12 @@
 </body>
 
 <script>
+
+    // Espera o DOM carregar e chame a função addActiveLink()
     document.addEventListener("DOMContentLoaded", function () {
         addActiveLink();
     });
-
+    
     function sendMessage() {
 
         const campoNomeRequired = document.getElementById('nome').required;
@@ -216,7 +224,7 @@
         }
     }
 
-
+    // Após clicar no botão chama a funcão addActiveLink()
     document.addEventListener('click', function () {
         addActiveLink();
 
@@ -225,14 +233,20 @@
     function addActiveLink() {
 
         const menuItems = document.querySelectorAll('.menu-horizontal a');
-
+        
+        // Aguarde 100ms
         setTimeout(() => {
+
+            // Pegue a hash após a url
             const currentLocation = window.location.hash;
 
+            // Percorra todo o menu items e faça a condição
             menuItems.forEach(item => {
 
+                // Pegue o valor do atributo href e delete os 11 primeiros caracteres
                 const linkHref = item.getAttribute('href').slice(11);
 
+                // Faça a condição e aplique a class activeLink
                 if (linkHref === currentLocation) {
                     item.classList.add('activeLink');
                 } else {
