@@ -121,9 +121,6 @@ footer {
   border-radius: 0;
 }
 
-.menu-horizontal a {
-}
-
 .menu-horizontal a.activeLink {
   color: rgb(232, 123, 72);
   font-weight: bold;
