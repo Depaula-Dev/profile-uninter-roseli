@@ -29,9 +29,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: rgba(213, 226, 238, 0.62);
+  position: fixed;
+  width: 100%;
+  background-color: rgb(223, 235, 242);
   grid-area: header;
+  z-index: 100;
 }
 
 main {
@@ -58,6 +60,7 @@ footer {
   justify-content: center;
   width: 130px;
   height: 70px;
+  padding-left: 20px;
 }
 
 .logo-dev {
@@ -103,7 +106,10 @@ footer {
   border-radius: 0;
 }
 
-.menu-horizontal a.active {
+.menu-horizontal a {
+}
+
+.menu-horizontal a.activeLink {
   color: rgb(232, 123, 72);
   font-weight: bold;
 }
@@ -117,6 +123,7 @@ footer {
   border-radius: 5px;
   padding: 10px 15px;
   box-shadow: 5px 5px 15px rgb(128, 76, 253);
+  margin-right: 20px;
 }
 
 .contato a {
@@ -132,12 +139,11 @@ footer {
   background: #804cfd99;
 }
 
-/* Configurando e ajustando container main ........................................................................*/
+/* Configurando e ajustando container main */
 .container {
   display: flex;
   flex-direction: column;
 }
-/* ........................................ ........................................................................*/
 
 /* Configurando e ajustando o container apresentação */
 .container-apresentacao {
@@ -408,7 +414,6 @@ footer {
   overflow: hidden;
 }
 
-
 /* Configurando e ajustando o container formulário para contato */
 .container-contato {
   display: flex;
@@ -416,23 +421,24 @@ footer {
   align-items: center;
   flex-direction: row;
   width: 100%;
-  gap: 120px;
+  gap: 10px;
 }
 
 /* Configurando e ajustando o container imagem do formulário para contato */
 .container-contato-img {
   display: flex;
-  position: relative;
   justify-content: center;
-  flex-direction: column;
-  width: 50%;
+  align-items: center;
   margin: 0;
 }
 
 /* Configurando e ajustando a imagem do formulário para contato */
 .container-contato-img img {
-  width: 800px;
-  height: 100%;
+  width: 700px;
+}
+
+form {
+  width: 100%;
 }
 
 /* Configurando e ajustando o container formulário para contato */
@@ -441,8 +447,7 @@ footer {
   position: relative;
   justify-content: center;
   flex-direction: column;
-  width: 50%;
-  padding-top: 100px;
+  width: 100%;
 }
 .container-contato-form h1 {
   color: rgba(49, 41, 122);

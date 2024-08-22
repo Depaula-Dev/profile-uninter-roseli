@@ -32,9 +32,9 @@
 
             <nav>
                 <ul class="menu-horizontal">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#quemsoueu">Quem sou eu</a></li>
-                    <li><a href="#academico">Acadêmico</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/index.html#quemsoueu">Quem sou eu</a></li>
+                    <li><a href="/index.html#academico">Acadêmico</a></li>
                 </ul>
             </nav>
 
@@ -47,7 +47,7 @@
         <main class="container">
 
             <!-- Apresentação com frase a esquerda -->
-            <div id="home" class="container-apresentacao">
+            <div class="container-apresentacao">
                 <div class="container-apresentacao-frase">
                     <h1>Olá, <br> sou a <span>Roseli</span> <br> Desenvolvedora <br> de Software</h1>
                     <h3><i class="fa-solid fa-heart"></i> Acredito no equilíbrio entre inovação tecnológica e
@@ -74,8 +74,8 @@
 
                     <img src="apresentacao.png" alt="img-apresentação">
                 </div>
-            </div> 
-          
+            </div>
+
             <div id="quemsoueu" class="container-quemsoueu">
 
                 <!-- Quem sou eu com imagem a direita -->
@@ -149,32 +149,32 @@
                     <img src="contato.png" alt="">
                 </div>
 
+                <form>
 
-                <div class="container-contato-form">
+                    <div class="container-contato-form">
 
-                    <h1>Entre em Contato</h1>
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" class="campo" required>
+                        <h1>Entre em Contato</h1>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" class="campo" required>
 
-                    <label for="telefone">Telefone</label>
-                    <input type="text" name="telefone" class="campo">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" name="telefone" class="campo">
 
-                    <label for="email">E-mail</label>
-                    <input type="text" name="email" required class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" class="campo" required>
 
-                    <label for="mensagem">Deixe uma mensagem</label>
-                    <textarea rows="8" name="mensagem" class="campo"></textarea>
+                        <label for="mensagem">Deixe uma mensagem</label>
+                        <textarea rows="8" name="mensagem" class="campo"></textarea>
 
-                    <div class="botao">
-                        <button type="submit">Enviar</button>
+                        <div class="botao">
+                            <button type="submit" onclick="sendMessage()">Enviar</button>
+                        </div>
+
+
+
                     </div>
-
-
-                </div>
-
+                </form>
             </div>
-
-
 
         </main>
 
@@ -192,16 +192,56 @@
 
             </div>
 
-
-
-
         </footer>
-
-
     </div>
 
-
-
 </body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        addActiveLink();
+    });
+
+    function sendMessage() {
+
+        const campoNomeRequired = document.getElementById('nome').required;
+        const campoNome = document.getElementById('nome').value;
+
+        const campoEmailRequired = document.getElementById('email').required;
+        const campoEmail = document.getElementById('email').value;
+
+        if ((campoNome && campoEmail) && (campoNomeRequired != undefined && campoEmailRequired != undefined)) {
+            alert("Mensagem enviada com Sucesso!")
+        }
+    }
+
+
+    document.addEventListener('click', function () {
+        addActiveLink();
+
+    });
+
+    function addActiveLink() {
+
+        const menuItems = document.querySelectorAll('.menu-horizontal a');
+
+        setTimeout(() => {
+            const currentLocation = window.location.hash;
+
+            menuItems.forEach(item => {
+
+                const linkHref = item.getAttribute('href').slice(11);
+
+                if (linkHref === currentLocation) {
+                    item.classList.add('activeLink');
+                } else {
+                    item.classList.remove('activeLink');
+                }
+            });
+        }, 100);
+    }
+
+</script>
+
 
 </html>
