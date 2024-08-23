@@ -34,7 +34,7 @@ body {
   .container-academico {
     display: flex;
   }
-
+  
   .container-contato {
     display: flex;
   }
@@ -209,8 +209,10 @@ footer {
 
 /* Configurando e ajustando IMAGEM na apresentação */
 .container-apresentacao-img img {
-  position: relative;
   height: 100%;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
   z-index: 2;
 }
 
@@ -360,11 +362,13 @@ footer {
   justify-content: center;
   width: 100%;
   flex-direction: column;
+
 }
 
 /* Configurando e ajustando a IMAGEM Quem sou Eu */
 .container-quemsoueu-img img {
-width: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 /* Configurando e ajustando o texto Quem sou Eu */
@@ -418,6 +422,10 @@ width: 100%;
 
 .container-academico-img {
   width: 100%;
+}
+
+.container-academico-img img {
+  width: 100%;
   overflow: hidden;
 }
 
@@ -443,6 +451,8 @@ width: 100%;
 /* Configurando e ajustando a imagem do formulário para contato */
 .container-contato-img img {
   width: 700px;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 form {
