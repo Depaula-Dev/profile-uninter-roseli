@@ -49,6 +49,7 @@ header {
   background-color: rgb(223, 235, 242);
   grid-area: header;
   z-index: 100;
+  border-bottom: 1px solid rgb(128, 76, 253, 0.3);
 }
 
 main {
@@ -90,7 +91,7 @@ footer {
 }
 
 .logo-img {
-  width: 45px;
+  width: 30px;
 }
 
 /* Configurando e ajustando o menu hotizontal no header */
@@ -134,7 +135,7 @@ footer {
   background-color: rgb(128, 76, 253);
   border-radius: 5px;
   padding: 10px 15px;
-  box-shadow: 5px 5px 15px rgb(128, 76, 253);
+  box-shadow: 2px 2px 5px rgb(128, 76, 253);
   margin-right: 20px;
 }
 
@@ -482,7 +483,7 @@ form {
   background-color: rgb(128, 76, 253);
   border-radius: 5px;
   padding: 10px 15px;
-  box-shadow: 5px 5px 15px rgb(128, 76, 253);
+  box-shadow: 2px 2px 5px rgb(128, 76, 253);
   color: #fff;
   transition: background-color 0.3s ease;
   font-size: 1rem;
