@@ -36,7 +36,7 @@
             menuItems.forEach(item => {
 
                 // Pegue o valor do atributo href e delete os 11 primeiros caracteres
-                const linkHref = item.getAttribute('href').slice(11);
+                const linkHref = item.getAttribute('href').slice(10);
 
                 // Faça a condição e aplique a class activeLink
                 if (linkHref === currentLocation) {
@@ -46,4 +46,5 @@
                 }
             });
         }, 100);
+        
     }
