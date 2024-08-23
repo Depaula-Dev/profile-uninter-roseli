@@ -14,8 +14,58 @@ body {
   height: 100vh;
 }
 
+@media (width < 480px) {
+  .header-desktop {
+    display: none;
+  }
+
+  .header-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+  }
+
+  .menu-horizontal-mobile {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  .menu-horizontal-mobile ul {
+    margin: 0;
+  }
+
+  .menu-horizontal-mobile li {
+    padding: 1px 10px;
+    margin: 0;
+  }
+
+  .menu-horizontal-mobile i {
+    font-size: 1.5rem;
+    }
+
+  .menu-horizontal-mobile a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin: 0;
+  }
+}
+
 /* Configurando telas maiores que 480px*/
 @media (width > 480px) {
+
+  .header-mobile{
+    display: none;
+  }
+
   .container-layout {
     display: grid;
     grid-template-columns: 100%;
@@ -36,132 +86,140 @@ body {
   }
 
   /* Configurando e ajustando circulos "Tecnology" */
-.container-apresentacao-img .circle-inner-tec {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(38, 225, 181);
-  width: 95px;
-  height: 95px;
-  top: 175px;
-  left: 50px;
-  background-color: rgb(207, 244, 236);
-  border-radius: 50%;
-  z-index: 1;
-  position: absolute;
-}
+  .container-apresentacao-img .circle-inner-tec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(38, 225, 181);
+    width: 95px;
+    height: 95px;
+    top: 175px;
+    left: 50px;
+    background-color: rgb(207, 244, 236);
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+  }
 
-.container-apresentacao-img .circle-out-tec {
-  width: 120px;
-  height: 300px;
-  position: absolute;
-  top: 150px;
-  left: 25px;
-  background-color: rgb(255, 255, 255);
-  border: solid 14px transparent;
-  border-radius: 80px;
-  background: linear-gradient(rgb(240, 248, 255), rgb(255, 255, 255, 0) 70%)
-      padding-box,
-    linear-gradient(to bottom, rgb(207, 244, 236, 1), rgb(255, 255, 255, 0) 70%)
-      border-box;
-}
+  .container-apresentacao-img .circle-out-tec {
+    width: 120px;
+    height: 300px;
+    position: absolute;
+    top: 150px;
+    left: 25px;
+    background-color: rgb(255, 255, 255);
+    border: solid 14px transparent;
+    border-radius: 80px;
+    background: linear-gradient(rgb(240, 248, 255), rgb(255, 255, 255, 0) 70%)
+        padding-box,
+      linear-gradient(
+          to bottom,
+          rgb(207, 244, 236, 1),
+          rgb(255, 255, 255, 0) 70%
+        )
+        border-box;
+  }
 
-/* Configurando e ajustando circulos "Nature" */
-.container-apresentacao-img .circle-inner-nature {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(233, 179, 104);
-  width: 95px;
-  height: 95px;
-  top: 150px;
-  right: 50px;
-  background-color: rgb(248, 240, 213);
-  border-radius: 50%;
-  z-index: 1;
-  position: absolute;
-}
+  /* Configurando e ajustando circulos "Nature" */
+  .container-apresentacao-img .circle-inner-nature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(233, 179, 104);
+    width: 95px;
+    height: 95px;
+    top: 150px;
+    right: 50px;
+    background-color: rgb(248, 240, 213);
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+  }
 
-.container-apresentacao-img .circle-out-nature {
-  width: 120px;
-  height: 300px;
-  position: absolute;
-  bottom: 180px;
-  right: 25px;
-  background-color: rgb(255, 255, 255);
-  border: solid 14px transparent;
-  border-radius: 80px;
-  background: linear-gradient(rgb(255, 255, 255, 0), rgb(240, 248, 255) 70%)
-      padding-box,
-    linear-gradient(to top, #f8f0d5, rgb(255, 255, 255, 0) 70%) border-box;
-}
+  .container-apresentacao-img .circle-out-nature {
+    width: 120px;
+    height: 300px;
+    position: absolute;
+    bottom: 180px;
+    right: 25px;
+    background-color: rgb(255, 255, 255);
+    border: solid 14px transparent;
+    border-radius: 80px;
+    background: linear-gradient(rgb(255, 255, 255, 0), rgb(240, 248, 255) 70%)
+        padding-box,
+      linear-gradient(to top, #f8f0d5, rgb(255, 255, 255, 0) 70%) border-box;
+  }
 
-/* Configurando e ajustando circulos "Clean Code" */
-.container-apresentacao-img .circle-inner-clean {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(149, 98, 211);
-  width: 95px;
-  height: 95px;
-  top: 325px;
-  right: 30px;
-  background-color: rgb(209, 189, 234);
-  border-radius: 50%;
-  z-index: 1;
-  position: absolute;
-}
+  /* Configurando e ajustando circulos "Clean Code" */
+  .container-apresentacao-img .circle-inner-clean {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(149, 98, 211);
+    width: 95px;
+    height: 95px;
+    top: 325px;
+    right: 30px;
+    background-color: rgb(209, 189, 234);
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+  }
 
-.container-apresentacao-img .circle-out-clean {
-  width: 300px;
-  height: 120px;
-  position: absolute;
-  top: 300px;
-  right: -180px;
-  background-color: rgb(255, 255, 255);
-  border: solid 14px transparent;
-  border-radius: 80px;
-  background: linear-gradient(
-        to right,
-        rgb(240, 248, 255),
-        rgb(255, 255, 255, 0) 70%
-      )
-      padding-box,
-    linear-gradient(to right, rgb(209, 189, 234, 1), rgb(255, 255, 255, 0) 70%)
-      border-box;
-}
+  .container-apresentacao-img .circle-out-clean {
+    width: 300px;
+    height: 120px;
+    position: absolute;
+    top: 300px;
+    right: -180px;
+    background-color: rgb(255, 255, 255);
+    border: solid 14px transparent;
+    border-radius: 80px;
+    background: linear-gradient(
+          to right,
+          rgb(240, 248, 255),
+          rgb(255, 255, 255, 0) 70%
+        )
+        padding-box,
+      linear-gradient(
+          to right,
+          rgb(209, 189, 234, 1),
+          rgb(255, 255, 255, 0) 70%
+        )
+        border-box;
+  }
 
-/* Configurando e ajustando circulos "" azul */
-.container-apresentacao-img .circle-out-blue {
-  width: 120px;
-  height: 300px;
-  position: absolute;
-  bottom: 350px;
-  left: 60px;
-  background-color: rgb(255, 255, 255);
-  border: solid 14px transparent;
-  border-radius: 80px;
-  background: linear-gradient(rgb(255, 255, 255, 0), rgb(240, 248, 255))
-      padding-box,
-    linear-gradient(to top, rgb(218, 233, 255), rgba(252, 217, 217, 0) 70%)
-      border-box;
-}
+  /* Configurando e ajustando circulos "" azul */
+  .container-apresentacao-img .circle-out-blue {
+    width: 120px;
+    height: 300px;
+    position: absolute;
+    bottom: 350px;
+    left: 60px;
+    background-color: rgb(255, 255, 255);
+    border: solid 14px transparent;
+    border-radius: 80px;
+    background: linear-gradient(rgb(255, 255, 255, 0), rgb(240, 248, 255))
+        padding-box,
+      linear-gradient(to top, rgb(218, 233, 255), rgba(252, 217, 217, 0) 70%)
+        border-box;
+  }
 
-/* Configurando e ajustando circulos "" red */
-.container-apresentacao-img .circle-out-red {
-  width: 120px;
-  height: 300px;
-  position: absolute;
-  bottom: 300px;
-  right: 180px;
-  background-color: rgb(255, 255, 255);
-  border: solid 14px transparent;
-  border-radius: 80px;
-  background: linear-gradient(rgb(255, 255, 255, 0), rgb(240, 248, 255))
-      padding-box,
-    linear-gradient(to top, rgb(254, 231, 239), rgb(255, 255, 255, 0) 70%)
-      border-box;
-}
+  /* Configurando e ajustando circulos "" red */
+  .container-apresentacao-img .circle-out-red {
+    width: 120px;
+    height: 300px;
+    position: absolute;
+    bottom: 300px;
+    right: 180px;
+    background-color: rgb(255, 255, 255);
+    border: solid 14px transparent;
+    border-radius: 80px;
+    background: linear-gradient(rgb(255, 255, 255, 0), rgb(240, 248, 255))
+        padding-box,
+      linear-gradient(to top, rgb(254, 231, 239), rgb(255, 255, 255, 0) 70%)
+        border-box;
+  }
   .container-apresentacao-img {
     height: 450px;
   }
@@ -340,7 +398,6 @@ footer {
   color: rgb(101, 211, 101);
 }
 
-
 /* Configurando e ajustando o container da IMAGEM de apresentação */
 .container-apresentacao-img {
   display: flex;
@@ -405,7 +462,6 @@ footer {
 
 .container-apresentacao-circles span {
   display: none;
-
 }
 /* Configurando e ajustando o texto Acadêmico */
 .container-academico {
